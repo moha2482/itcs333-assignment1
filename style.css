@@ -2,12 +2,126 @@
     margin:0;
     padding:0;
 }
-body {
+
+
+body {         /* Set overall style for the page */
     font-family: Arial, sans-serif;
     color: #333;
-    background-image: url('shutterstock_172261862-2--d36510500ca044e1bd9bb51f798b3141.jpg'); /* Replace with your image path */
-    background-size: cover; /* Ensure the image covers the entire page */
+    background-image: url('shutterstock_172261862-2--d36510500ca044e1bd9bb51f798b3141.jpg'); 
+    background-size: cover;                /* cover the backgroun with the picture  */
     background-position: center;
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    background-repeat: no-repeat;           /* Prevents the image from repeating */
+    background-attachment: fixed;          /* Keeps the background fixed when scrolling */
 }
+
+/* Styles for the header */
+header {
+    background-color: #ffcc00;     /* Background color */
+    padding: 10px;                   /* Padding */
+    text-align: center;              /* Center-align text */
+}
+
+/* Styles for any element with class 'hello' */
+.hello {
+    color: black; 
+}
+
+/* Styles for the navigation bar */
+nav {
+    display: flex;                    /* Use flexbox for layout */
+    justify-content: center;           /* Center the nav items */
+    background-color: #ff9900;      /* Background color */
+    padding: 2%;                      /* Padding */
+}
+
+/* Styles for links in the navigation bar */
+nav a {
+    color: white;                    /* Text color */
+    margin: 0 15px;                    /* Margin */
+    text-decoration: none;             /* Remove underline */
+    padding: 8px 16px;                 /* Padding */
+    border-radius: 5px;                /* Rounded corners */
+}
+
+/* Styles for hovered links in the navigation bar */
+nav a:hover {
+    background-color: #ff6700;         /* Background color on hover */
+}
+
+/* Styles for the main content */
+main {
+    display: flex;                        /* Use flexbox for layout */
+    flex-direction: column;               /* Arrange elements in a column */
+    padding: 20px;                        /* Padding */
+}
+
+/* Styles for sections within the main content */
+.section {
+    margin-bottom: 20px;                          /* Margin below each section */
+    padding: 15px;                                /* Padding */
+    background-color: #fff;                     /* Background color */
+    border-radius: 10px;                          /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);     /* Box shadow */
+}
+
+/* Styles for teacher info */
+.teacher-info {
+    display: inline-block;              /* Display inline block */
+    color: black;                     /* Text color */
+}
+
+/* Styles for teacher images */
+.teacher-image {
+    margin-right: 20px;                /* Margin to the right */
+    width: 70px;                       /* Set width of the image */
+    height: auto;                      /* Maintain aspect ratio */
+    vertical-align: middle;            /* Align image with the middle of the text */
+}
+
+/* Styles for elements with class 'color' */
+.color {
+    color: orange; /* Text color */
+}
+
+/* does Style for the gallery container */
+.gallery-container {
+    display: flex;                   /* Display items in a row */
+    flex-wrap: wrap;                 /* Wrap items to the next line if needed */
+    justify-content: space-around;   /* Space items evenly */
+}
+
+/* Styles for figures in the gallery */
+figure {
+    margin: 10px;                       /* Margin around each element */
+    text-align: center;                 /* Center align text */
+}
+
+/* Styles for the footer */
+footer {
+    text-align: center;                  /* Center-align text */
+    padding: 10px; 
+    background-color: #ffcc00; 
+    position: relative;                  /* Position footer similar to old position */
+    bottom: 0;                           /* Align footer to the bottom */
+    width: 100%;                         /* Full width */
+}
+
+        /* Styles for links in the footer */
+footer a {
+    color: orangered; 
+}
+
+        /* Responsive design for screens wider than 600px */
+@media (min-width: 600px) {
+    main {
+        flex-direction: row;             /* Arrange them */
+        flex-wrap: wrap;                 /* goes to next line */
+        justify-content: space-around;   /* does even spacess */
+    }
+    .section {
+        flex: 1 1 45%;                   /* give the items space up to 45% */
+        margin: 10px;                    /* set the space around each item */
+    }
+    
+}
+
